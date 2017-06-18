@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>myENV</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/c3/c3.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/phone.css">
+    <script src="node_modules/d3/d3.min.js"></script>
+    <script src="node_modules/c3/c3.min.js"></script>
+</head>
+<body>
+<div class="myENV_layout">
+    <div class="toggle_menu">
+        <ul>
+            <li><a href="javascript:;">myENV</a></li>
+            <li><a href="javascript:;">天气情况</a></li>
+            <li><a href="javascript:;">天气</a></li>
+            <li><a href="javascript:;">当前情况</a></li>
+            <li><a href="javascript:;">昨天情况</a></li>
+            <li><a href="javascript:;">明天情况</a></li>
+        </ul>
+    </div>
+    <div class="containers">
+        <div class="header">
+            <nav>
+                <div class="menu"><span class="glyphicon glyphicon-menu-hamburger"></span></div>
+                <div class="title">
+                    <h3>myENV</h3>
+                    <p class="curr_location" style="cursor: pointer">Current Location <span class="glyphicon glyphicon-menu-up"></span></p>
+                </div>
+                <div class="warn"><span class="glyphicon glyphicon-bell"></span></div>
+                <div class="toggle_warn">
+                    <p>No Message</p>
+                    <button type="button" class="btn btn-default" id="cancel">Cancel</button>
+                </div>
+            </nav>
+            <div class="location">
+                <ul>
+                    <li><a href="javascript:;">北京</a></li>
+                    <li><a href="javascript:;">上海</a></li>
+                    <li><a href="javascript:;">深圳</a></li>
+                    <li><a href="javascript:;">广州</a></li>
+                    <li><a href="javascript:;">天津</a></li>
+                    <li><a href="javascript:;">杭州</a></li>
+                    <li><a href="javascript:;">南京</a></li>
+                    <li><a href="javascript:;">济南</a></li>
+                    <li><a href="javascript:;">重庆</a></li>
+                    <li><a href="javascript:;">大连</a></li>
+                    <li><a href="javascript:;">宁波</a></li>
+                </ul>
+            </div>
+            <div class="info clearfix">
+                <div class="detail">
+                    <div class="weather_img"><img src="" alt=""></div>
+                    <div class="weather">
+                        <h2 class="desc">Cloudy</h2>
+                        <div class="weather_detail">
+                            <span class="glyphicon glyphicon-globe temp"></span>
+                            <h3 class="temp"></h3>
+                            <span class="glyphicon glyphicon-tint humidness"></span>
+                            <h3 class="humidness"></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="message">
+                <ul>
+                    <li class="psi">
+                        <p>PSI</p>
+                        <span class="psi_mess"></span>
+                        <p class="confortable">Moderate</p>
+                    </li>
+                    <div class="border"></div>
+                    <li class="rain">
+                        <p>RAIN</p>
+                        <span class="rain_mess">0</span>
+                        <p>mm</p>
+                    </li>
+                    <div class="border"></div>
+                    <li class="dengue">
+                        <p>DENGUE</p>
+                        <span class="dengue_mess"></span>
+                    </li>
+                    <div class="border"></div>
+                    <li class="add">
+                        <span class="add_item">+</span>
+                        <strong>Add</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <h2 class="tide">Tide • <span class="sun">Sunrise ＆ Sunset</span></h2>
+            <h3 class="date">27<sup class="th">th</sup>Dead</h3>
+        </div>
+        <div class="chart">
+            <div class="layer">
+                <div id="chart"></div>
+                <div class="time">
+                    <span>0:24 am</span>
+                    <span>4:38 am</span>
+                    <span>20:36 pm</span>
+                    <span class="currenTime"></span>
+                </div>
+                <div class="sunImg"><div class="sunrise"><img src="img/duoyun.png" alt=""></div></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/weather.js"></script>
+</body>
+</html>

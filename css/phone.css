@@ -1,0 +1,324 @@
+.myENV_layout{
+    max-width: 750px;
+    min-width: 320px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.containers {
+    width:100%;
+    position: relative;
+}
+/*nav*/
+.header {
+    text-align: center;
+    background: -webkit-linear-gradient(#2348A1, #4080BD)
+}
+.header nav {
+    display: flex;
+    height: 80px;
+    line-height: 80px;
+}
+.header .menu {
+    flex:1;
+    line-height: 100px;
+    cursor: pointer;
+}
+.header .menu span {
+    font-size: 35px;
+    color: #eae2e2;
+}
+.toggle_menu {
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 70%;
+    background-color: #0071de;
+}
+.toggle_menu ul {
+    padding:0;
+    margin:0;
+}
+.toggle_menu li {
+    height: 45px;
+    line-height: 45px;
+}
+.toggle_menu a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+}
+.toggle_menu a:hover {
+    background-color: #479aea;
+}
+.header .title {
+    flex:4;
+}
+.header .title h3 {
+    line-height: 24px;
+}
+.header .title p {
+    line-height: 0px;
+    font-size: 20px;
+}
+.header .warn {
+    flex:1;
+    font-size: 35px;
+    line-height: 100px;
+    cursor: pointer;
+}
+.header .toggle_warn {
+    background-color: #fff;
+    position: absolute;
+    display: none;
+    width: 50%;
+    margin:0 auto;
+    top:30%;
+    left:25%;
+    line-height: 20px;
+    color:#666;
+}
+.toggle_warn p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+.toggle_warn button {
+    border:2px solid #eee;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+/*location*/
+.location {
+    visibility: hidden;
+    width: 60%;
+    background-color: #007aff;
+    margin:0 auto;
+    display: flex;
+    color:#fff;
+}
+.location ul {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+}
+.location ul li {
+    width: 25%;
+    height: 30px;
+    line-height: 30px;
+}
+.location li a {
+    color:#fff;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.location li a:hover {
+    color:#fff;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: #666;
+}
+/*info*/
+.header .info {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+.info .detail {
+    width: 100%;
+    /*display: flex;*/
+}
+.info .detail .weather_img {
+    width: 45%;
+    float: left;
+}
+.header .detail img {
+    width: 45%;
+}
+.header .detail .weather {
+    width:55%;
+    text-align: left;
+    float: left;
+    margin-left: -30px;
+}
+.header .detail .desc {
+    width: 100%;
+    margin-top: -15px;
+    margin-bottom: 25px;
+}
+.weather .weather_detail {
+    width: 100%;
+    display: flex;
+}
+.weather_detail span.temp {
+    font-size: 25px;
+}
+.weather_detail h3.temp {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+.weather_detail span.humidness {
+    font-size: 25px;
+}
+.weather_detail h3.humidness {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+/* message */
+.message {
+    width: 100%;
+    height: 105px;
+}
+.message ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.message li {
+    width: 25%;
+    text-align: center;
+}
+.message li:nth-child(4) {
+     border-right:none;
+}
+.message .border {
+    height: 100%;
+    width: 1px;
+    background: -webkit-linear-gradient(#417ABD,#A3C6E6)
+}
+.message .psi .psi_mess {
+    font-size: 20px;
+    display: block;
+    width: 50px;
+    height: 35px;
+    background-color: #0070A2;
+    margin:0 auto;
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+.message .rain .rain_mess {
+    font-size: 20px;
+    display: block;
+    width: 50px;
+    height: 35px;
+    margin:0 auto;
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+.message .dengue .dengue_mess {
+    border: 1px solid #D0AD2D;
+    border-radius: 50%;
+    -webkit-border-radius:50%;
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin:0 auto;
+    margin-bottom: 10px;
+    background-color: #6294C9;
+}
+.message .add {
+    margin-top: 20px;
+    cursor: pointer;
+}
+.message .add .add_item {
+    display: block;
+    border: 1px solid #1D2E48;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    -webkit-border-radius:50%;
+    color:#1D2E48;
+    text-align: center;
+    line-height: 30px;
+    font-size: 30px;
+    margin:0 auto;
+    margin-bottom: 15px;
+}
+.message .add p {
+    color:#1D2E48;
+}
+/*main*/
+.main .tide {
+    margin-left: 15px;
+    color:#8BDEF0;
+    font-size: 20px;
+}
+.main .sun {
+    color:#F9CC8B;
+}
+.main .date {
+    text-align: center;
+    color:#000;
+}
+.main .th {
+    color:#666;
+    padding-right: 10px;
+}
+/*chart*/
+.chart {
+    overflow: hidden;
+}
+.layer {
+    width:300%;
+    position: relative;
+    left:-20%;
+}
+#chart {
+    width:100%;
+}
+/*time*/
+.time {
+    color:#F9CC8B;
+    width:100%;
+    height: 20px;
+    position: relative;
+}
+.time span {
+    position: absolute;
+}
+.time span:nth-child(1) {
+    left:2%;
+}
+.time span:nth-child(2) {
+    left:14%;
+}
+.time span:nth-child(3) {
+    right:15%;
+}
+@media (max-width: 500px){
+    .time span:nth-child(3) {
+    right:11%;
+}
+}
+.currenTime {
+    color:#898989;
+    position: relative;
+} 
+.currenTime .trigon {
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    position: absolute;
+    top:-17px;
+    left:22px;
+}
+.sunImg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius:50%;
+    overflow: hidden;
+    position: absolute;
+}
+.sunImg .sunrise {
+    overflow: hidden;
+}
