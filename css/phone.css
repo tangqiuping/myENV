@@ -12,14 +12,17 @@
 /*nav*/
 .header {
     text-align: center;
-    background: -webkit-linear-gradient(#2348A1, #4080BD)
+    background: -webkit-linear-gradient(#2348A1, #4080BD);
+    background: linear-gradient(#2348A1, #4080BD);
 }
 .header nav {
+    display: -webkit-flex;
     display: flex;
     height: 80px;
     line-height: 80px;
 }
 .header .menu {
+    -webkit-flex: 1;
     flex:1;
     line-height: 100px;
     cursor: pointer;
@@ -54,6 +57,7 @@
     background-color: #479aea;
 }
 .header .title {
+    -webkit-flex: 4;
     flex:4;
 }
 .header .title h3 {
@@ -64,6 +68,7 @@
     font-size: 20px;
 }
 .header .warn {
+    -webkit-flex: 1;
     flex:1;
     font-size: 35px;
     line-height: 100px;
@@ -95,13 +100,16 @@
     width: 60%;
     background-color: #007aff;
     margin:0 auto;
+    display: -webkit-flex;
     display: flex;
     color:#fff;
 }
 .location ul {
     margin-top: 10px;
     width: 100%;
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-wrap: wrap;
     flex-wrap:wrap;
 }
 .location ul li {
@@ -152,6 +160,7 @@
 }
 .weather .weather_detail {
     width: 100%;
+    display: -webkit-flex;
     display: flex;
 }
 .weather_detail span.temp {
@@ -179,6 +188,7 @@
 .message ul {
     width: 100%;
     height: 100%;
+    display: -webkit-flex;
     display: flex;
 }
 .message li {
