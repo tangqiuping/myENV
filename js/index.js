@@ -299,15 +299,16 @@
                 if(flag){
                     $('.toggle_menu').css('display','block')
                     $('.containers').animate({'left':'70%'},200)
-                    flag = false
+                    flag = false;
                 }else{
                     $('.toggle_menu').css('display','none')
                     $('.containers').animate({'left':'0%'},200)
-                    flag = true
+                    flag = true;
                 }
                 
             })
             $('.toggle_menu a').click(function(){
+                flag = true;
                 $('.toggle_menu').css('display','none');
                 $('.containers').animate({'left':'0'},200);
             })
