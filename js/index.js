@@ -294,9 +294,18 @@
             $('#cancel').click(function(){
                 $('.toggle_warn').css('display','none')
             })
+            var flag = true;
             $('.menu').click(function(){
-                $('.toggle_menu').css('display','block')
-                $('.containers').animate({'left':'70%'},200)
+                if(flag){
+                    $('.toggle_menu').css('display','block')
+                    $('.containers').animate({'left':'70%'},200)
+                    flag = false
+                }else{
+                    $('.toggle_menu').css('display','none')
+                    $('.containers').animate({'left':'0%'},200)
+                    flag = true
+                }
+                
             })
             $('.toggle_menu a').click(function(){
                 $('.toggle_menu').css('display','none');
